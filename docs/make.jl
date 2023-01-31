@@ -16,7 +16,9 @@ makedocs(;
     ),
     pages=[
         "Home" => "index.md",
+        "Quadrotor QuickStart" => "quadrotor_geometric_control.md"
     ],
+    strict=true,
 )
 
 deploydocs(;
