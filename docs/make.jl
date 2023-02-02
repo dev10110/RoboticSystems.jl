@@ -16,9 +16,12 @@ makedocs(;
     ),
     pages=[
         "Home" => "index.md",
-        "Quadrotor QuickStart" => "quadrotor_geometric_control.md"
+        "Quickstart" => [
+            "Quadrotor QuickStart" => "quadrotor_geometric_control.md"
+            "Multiagent" => "multiagents_demo.md"
+           ]
     ],
-    strict=true,
+    # strict=true,
 )
 
 deploydocs(;

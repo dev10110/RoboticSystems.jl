@@ -160,8 +160,6 @@ All of the arguments (e.g. `restol, abstol`) that you normally pass into `ODEPro
 ## Plot/Animate the solution
 
 ```@example quad
-plotly()
-
 plot()
 RS.plot_quad_traj!(sol, quad_p; tspan=tspan)
 
@@ -174,8 +172,6 @@ RS.plot_project3d!()
 Next, we can use `Plots.jl`'s animation tools to construct a simple animation. 
 
 ```@example quad
-gr()
-
 anim = @animate for tm = range(sol.t[1], sol.t[end], 200)
     
     tspan=(sol.t[1], tm)
